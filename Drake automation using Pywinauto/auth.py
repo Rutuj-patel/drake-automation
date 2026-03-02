@@ -42,7 +42,7 @@ def launch_and_login(app: Application) -> object:
 
     print("[AUTH] Connecting to Drake main window...")
     main_win = Desktop(backend="uia").window(
-        title="Drake 2024 Tax Software", class_name="Window"
+    title_re=".*Drake 20(23|24) Tax Software.*"
     )
     main_win.wait("visible", timeout=config.WINDOW_TIMEOUT)
     main_win.set_focus()
@@ -152,4 +152,5 @@ def submit_mfa(max_retries: int = config.MFA_MAX_RETRIES) -> bool:
         return True
 
     print("[MFA] All attempts exhausted — login FAILED.")
+
     return False
