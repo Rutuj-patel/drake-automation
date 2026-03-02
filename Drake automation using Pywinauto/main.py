@@ -52,10 +52,10 @@ def main() -> None:
     banner("Step 2 — Login")
     main_win = launch_and_login(app)
 
-    mfa_ok = submit_mfa(max_retries=config.MFA_MAX_RETRIES)
-    if not mfa_ok:
-        print("\n[MAIN] MFA failed — aborting.")
-        sys.exit(1)
+    # mfa_ok = submit_mfa(max_retries=config.MFA_MAX_RETRIES)
+    # if not mfa_ok:
+    #     print("\n[MAIN] MFA failed — aborting.")
+    #     sys.exit(1)
 
     main_win.set_focus()
     main_win.wait("visible", timeout=30)
@@ -103,4 +103,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+
     main()
