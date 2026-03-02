@@ -2,7 +2,7 @@ DRAKE_PATH = r"C:\DRAKE23\FT\DSTART2023.EXE"
 
 
 USERNAME = "admin"
-PASSWORD = "Unison@2023"
+PASSWORD = "Unison@2026"
 
 
 TOTP_SECRET = "VEMLT5ZGNC5ZEGV4"
@@ -23,4 +23,5 @@ FORM_OPEN_DELAY     = 2.0  # wait after clicking a nav link / search
 PGDN_DELAY          = 1.5  # wait after pressing Page Down
 
 MFA_RESPONSE_DELAY  = 2    # wait after clicking MFA OK before checking result
+
 
