@@ -1,4 +1,4 @@
-DRAKE_PATH = r"D:\DRAKE24\FT\DSTART2024.EXE"
+DRAKE_PATH = r"C:\DRAKE23\FT\DSTART2023.EXE"
 
 
 USERNAME = "admin"
@@ -21,4 +21,5 @@ MFA_MAX_RETRIES     = 3
 STARTUP_DELAY       = 6    # wait after launching Drake
 FORM_OPEN_DELAY     = 2.0  # wait after clicking a nav link / search
 PGDN_DELAY          = 1.5  # wait after pressing Page Down
+
 MFA_RESPONSE_DELAY  = 2    # wait after clicking MFA OK before checking result
