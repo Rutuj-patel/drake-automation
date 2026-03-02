@@ -13,7 +13,7 @@ def get_data_entry_hwnd() -> int | None:
 
     def _cb(hwnd, _):
         title = win32gui.GetWindowText(hwnd)
-        if "DRAKE 2024 - Data Entry" in title and win32gui.IsWindowVisible(hwnd):
+        if "DRAKE 20" in title and "Data Entry" in title and win32gui.IsWindowVisible(hwnd):
             found.append(hwnd)
 
     win32gui.EnumWindows(_cb, None)
